@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get -y install libdb4.8-dev libdb4.8++-dev unzip \
     && apt-get -y install wget libzmq3 libminiupnpc8
 	
-ENV WALLET_URL=https://github.com/TierMasternodeCoin/TierMasternodeCoin/releases/download/untagged-3660c25ccce98bf23223/tiermasternodecoin-qt-linux.tar.gz
+ENV WALLET_URL=https://github.com/TierMasternodeCoin/TierMasternodeCoin/releases/download/untagged-3660c25ccce98bf23223/tiermasternodecoin-daemon-linux.tar.gz
 
 RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& cd /usr/local/bin \
