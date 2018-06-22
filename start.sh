@@ -6,7 +6,7 @@ GitHub: https://github.com/joshendriks/
 Docker: https://hub.docker.com/r/joshendriks/ 
 
 BTC: 1NCZgpMMoNwL6ZeFsEQ2kRZEzzzTd5TuGk
-TMN: TEUeyiiroEBa82knSk9cs9N7t5Kv7iJe5F"
+TMN: 17z33wid9jf2sNJWDZpY7B9iRcLbHrK8WL"
 
 config="/config/tiermasternodecoin.conf"
 if [ -f "$config" ]

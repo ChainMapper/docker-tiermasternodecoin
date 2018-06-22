@@ -20,7 +20,7 @@ RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 COPY tiermasternodecoin.conf /data/.tiermasternodecoin/tiermasternodecoin.conf
 
 #rpc port & main port
-EXPOSE 38788 38787
+EXPOSE 39256 39255
 
 ENV HOME /data
 
