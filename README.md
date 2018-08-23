@@ -4,8 +4,10 @@ Wallet and daemon for Tier Masternode Coin [TMN] cryptocurrency on docker
 # Quickstart
 Type `docker run -it -e "USER=me" -e "PASSWORD=secret" -e "RPCALLOW=127.0.0.1" chainmapper/tiermasternodecoin` and see the wallet starting.
 
+Alternatively type `docker run -it -v "<path_to_config>:/config/tiermasternodecoin.conf" chainmapper/tiermasternodecoin` to use your own config.
+
 ```
-Docker tiermasternodecoin wallet
+Docker TMN wallet
 
 By: ChainMapper
 Website: https://chainmapper.com

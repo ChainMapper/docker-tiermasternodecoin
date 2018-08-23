@@ -4,15 +4,15 @@ ENV WALLET_URL=https://github.com/TierMasternodeCoin/TierMasternodeCoin/releases
 
 RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& cd /usr/local/bin \
-	&& tar xvzf /tmp/wallet.tar.gz \
-	&& mkdir -p /data/.tiermasternodecoin
+	&& tar xvzf /tmp/wallet.tar.gz
 
-#rpc port & main port
-EXPOSE 39256 39255
+#rpc port & mainport
+EXPOSE 6666 39255
 
+RUN mkdir /data
 ENV HOME /data
 
 COPY start.sh /start.sh
 COPY gen_config.sh /gen_config.sh
 RUN chmod 777 /*.sh
-CMD /start.sh
+CMD /start.sh tiermasternodecoin TMN tiermasternodecoind

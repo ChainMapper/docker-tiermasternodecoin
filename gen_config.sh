@@ -4,6 +4,7 @@ cat  << EOF
 rpcuser=$USER
 rpcpassword=$PASSWORD
 rpcallowip=$RPCALLOW
+rpcport=6666
 txindex=1
 addnode=node.walletbuilders.com
 addnode=37.97.242.80
