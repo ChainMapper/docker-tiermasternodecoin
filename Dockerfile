@@ -15,4 +15,4 @@ ENV HOME /data
 COPY start.sh /start.sh
 COPY gen_config.sh /gen_config.sh
 RUN chmod 777 /*.sh
-CMD /start.sh tiermasternodecoin TMN tiermasternodecoind
+CMD /start.sh tiermasternodecoin.conf TMN tiermasternodecoind
